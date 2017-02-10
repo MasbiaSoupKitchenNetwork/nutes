@@ -10,8 +10,7 @@ data_cleanup:
 	go build -o data_cleanup data_cleanup.go
 
 sr26.zip:
-	curl -O https://www.ars.usda.gov/SP2UserFiles/Place/12354500/Data/SR26/dnload/sr26.zip
-
+	curl -O https://www.ars.usda.gov/ARSUserFiles/80400525/Data/SR26/dnload/sr26.zip
 sr26: sr26.zip
 	mkdir sr26
 	tar -C sr26 -xvf sr26.zip
